@@ -1,0 +1,260 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* FIN Reset*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.callToAction{
+    background: pink;
+    padding: 11px 21px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background: url(../IMG/Titi\ Burger/resto.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    justify-content: space-between;
+}
+.logo{
+    width: 350px;
+    text-align: center;
+    padding-top: 20px; /* marge intérieur */
+}
+.interaction{
+    width: 40%;
+    height: 300px;
+}
+.boutons {
+    text-align: right;
+    padding: 30px;
+}
+.boutons .callToAction{
+    margin-left: 16px;
+    transition: 0.5s;
+}
+.boutons .callToAction:hover{
+    color: pink;
+    background: white;
+    filter: brightness(85%);
+}
+nav{
+    margin-top: 20px;
+}
+nav ul{
+    display: flex;
+    justify-content:space-between;
+    padding-right: 30px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    transition: 0.5s;
+    font-family: 'Roboto', sans-serif;
+}
+nav a:hover {
+    color: pink; 
+}
+main{
+}
+h1{
+    color: pink;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+h2{
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+p{
+    font-size: 18px;
+    text-align: justify;
+}
+/*1ère SECTION*/
+section{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    width: 1440;
+    margin: 100px auto;
+}
+.resto{
+    width: 40%;
+    color: pink;
+    font-size: 32px;
+    font-weight: bold;
+}
+.restoIMG{
+    border: 2px solid goldenrod;
+    margin-top: 20px;
+    width: 85%;
+}
+.histoire{
+    width: 60%;
+    padding-right: 100px;
+}
+/*2ème SECTION*/
+.burgers{
+    display: flex;
+    justify-content: center;
+    width: 1440;
+    margin: 100 auto;
+}
+#nosBurgers{
+    width: 40%;
+    padding-right: 100px;
+}
+#slideShow {
+    width: 60%;
+    display: flex; 
+    padding: 0px 10px;
+    gap: 20px;
+}
+.burger1, .burger2, .burger3{
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    border: 2px solid goldenrod;
+}
+.burger2{
+    background: yellow;
+}
+.burger3{
+    background: red;
+}
+.burger1img{
+    height: 100%;
+    position: relative;right: 20px;
+    overflow: hidden;
+}
+.burger2img{
+    width: 100%;
+    position: relative;bottom: 100px;
+    overflow: hidden;
+}
+.burger3img{
+    width: 100%;
+    position: relative;bottom: 80px;
+    overflow: hidden;
+}
+.burgerN1{
+    text-align: center;
+}
+/*3ème SECTION*/
+.actus {
+    display: flex;
+    height: 300 px;
+    width: 1440;
+    margin: 0 auto;
+}
+.actu1, .actu2, .actu3{
+    width: 33.33%;
+    height: 300px;
+    background: lightblue;
+}
+.actu2 {
+    background: lightcoral;
+}
+.actu3 {
+    background: lightgreen;
+}
+/*4ème SECTION*/
+.newsletter {
+    height: 200px;
+}
+#offres {
+    width: 35%;
+    height: 200px;
+    background: darkcyan;
+}
+#email {
+    width: 65%;
+    height: 200px;
+    background: darkgoldenrod;
+}
+footer {
+    height: 300px;
+}
+.prefooter {
+    height: 300px;
+}
+#mentions, #plandusite, #carte, #contact, #reseaux {
+    width: 20%;
+    height: 300px;
+    background: orange;
+}
+#plandusite{
+    background: blue;
+}
+#carte{
+    background: purple;
+}
+#contact{
+    background: green;
+}
+#reseaux{
+    background: yellow;
+}
